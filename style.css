@@ -1,0 +1,106 @@
+/* 1. Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't make boxes wider than we want */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* 2. Body Styling - Centering the App */
+body {
+    background-color: #f4f4f9; /* Light grey background */
+    color: #333; /* Dark grey text is easier to read than pure black */
+    display: flex; /* Magic command to control layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take up 100% of the viewport height */
+}
+
+/* 3. The Main Card Container */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 500px; /* Don't let it get too wide on big screens */
+    padding: 2rem;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    text-align: center; /* Center text inside the card */
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* 4. Input and Button Styling */
+.search-box {
+    display: flex;
+    gap: 10px; /* Space between dropdown and button */
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1; /* Take up available space */
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer; /* Change mouse cursor to hand icon */
+    font-size: 16px;
+    transition: background 0.3s; /* Smooth color change on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
+}
+
+/* 5. Repository Result Card Styling */
+/* We will inject this HTML later via JS, but we style it now */
+.repo-box {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fafafa;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.repo-box h3 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.repo-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    background: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.repo-stats span {
+    font-weight: bold;
+}
+
+/* 6. Utility Class: Hidden */
+/* This is very important for our logic later! */
+.hidden {
+    display: none;
+}
