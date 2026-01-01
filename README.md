@@ -2,17 +2,17 @@
 
 A responsive web application that utilizes the **GitHub REST API** to help developers discover random open-source repositories based on their preferred programming language.
 
-**[🔴 LIVE DEMO LINK HERE]** *(Replace the text above with your GitHub Pages link)*
+**🔴 Live Demo:** [https://poonam150.github.io/github-repo-finder/](https://poonam150.github.io/github-repo-finder/)
 
 ---
 
 ## 🚀 Features
 
 * **Language-Based Search:** Filter repositories by popular programming languages (JavaScript, Python, Java, C++, etc.).
-* **Random Selection Logic:** intelligently picks a random repository from the top results.
+* **Random Selection Logic:** Intelligently picks a random repository from the top results.
 * **Real-Time Data:** Fetches live data including Stars ⭐, Forks 🍴, and Open Issues 🐞.
 * **Dynamic UI:** Updates the interface using JavaScript DOM manipulation without page reloads.
-* **Error Handling:** graceful error messages for network failures or empty results.
+* **Error Handling:** Graceful error messages for network failures or empty results.
 * **Responsive Design:** Fully optimized for desktop and mobile devices.
 
 ---
